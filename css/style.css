@@ -19,12 +19,16 @@ body{
   text-decoration: underline;
 }
 
+.border-dx{
+  border-left: 0.5px solid rgb(159, 158, 158);
+}
+
 /* dekstop */
 @media screen and (min-width:992px){
   main{
     margin: 0 auto;
     display: flex;
-    height: 650px;
+    height: 766px;
     min-width: 992px;
     justify-content: center;
     align-items: center;
@@ -34,11 +38,9 @@ body{
     display: flex;
     height: 93%;
     width: 80%;
-    background-color: blue;
   }
   
   .row-sx{
-    background-color: pink;
     width: 35%;
     height: 100%;
   }
@@ -117,12 +119,19 @@ body{
 
   .chat{
     overflow: auto;
+    height: 51.8vh ;
   }
+
+html::-webkit-scrollbar{
+    width: 20px;
+
+  }
+
   .utente{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 97%;
     height: 68px;
     background-color: #EAEAEA;
     border: 1px solid black;
