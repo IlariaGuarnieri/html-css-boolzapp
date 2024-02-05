@@ -12,8 +12,12 @@ body{
     #DBDBD3 90%,
     #009788 10%
   );
+  font-family:'Lato', sans-serif;
 }
 
+.underline{
+  text-decoration: underline;
+}
 
 /* dekstop */
 @media screen and (min-width:992px){
@@ -29,7 +33,7 @@ body{
   .container{
     display: flex;
     height: 93%;
-    width: 75%;
+    width: 80%;
     background-color: blue;
   }
   
@@ -40,10 +44,98 @@ body{
   }
 
   .col{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
     height: 68px;
     background-color: #EAEAEA;
   }
+
+  .photo{
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-left: 10px;
+  }
+
+  .photo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  #elements{
+    margin-right: 10px;
+    color: #B1B1B1;
+  }
+
+  #elements .fa-solid{
+    margin: 5px;
+  }
+
+  .col-notifiche{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 78px;
+    background-color: #8EDAFC;
+  }
+
+  .bell{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 10px;
+  }
+
+  .bell i{
+    font-size: 23px;
+    color: #8EDAFC;
+  }
+
+  .col-notifiche p{
+    font-size: 13px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+  }
+
+  .searchbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 48px;
+    background-color: #EAEAEA;
+    border: 1px solid black;
+  }
+
+  .chat{
+    overflow: auto;
+  }
+  .utente{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 68px;
+    background-color: #EAEAEA;
+    border: 1px solid black;
+  }
+
+
+
+  
+}
+
+
+
+
 
 /* CHAT grande  */
   .row-dx{
