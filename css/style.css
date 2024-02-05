@@ -1,0 +1,54 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(
+    to top,
+    #DBDBD3 90%,
+    #009788 10%
+  );
+}
+
+
+/* dekstop */
+@media screen and (min-width:992px){
+  main{
+    margin: 0 auto;
+    display: flex;
+    height: 650px;
+    min-width: 992px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container{
+    display: flex;
+    height: 93%;
+    width: 75%;
+    background-color: blue;
+  }
+  
+  .row-sx{
+    background-color: pink;
+    width: 35%;
+    height: 100%;
+  }
+
+  .col{
+    width: 100%;
+    height: 68px;
+    background-color: #EAEAEA;
+  }
+
+/* CHAT grande  */
+  .row-dx{
+    background-color: rgb(146, 232, 200);
+    width: 65%;
+    height: 100%;
+  }
+}
