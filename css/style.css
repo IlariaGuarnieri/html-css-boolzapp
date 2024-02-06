@@ -31,13 +31,13 @@ body{
     margin: 0 auto;
     border-color: blue;
     display: flex;
-    height: 96%;
+    height: 100%;
     width: 80%;
   }
   
   .row-sx{
-    width: 35%;
-    height: 785px;
+    width: 376px;
+    height: 100%;
   }
 
   .col{
@@ -163,7 +163,7 @@ body{
     flex-direction: column;
     background-image: url(/img/mine.jpg);
     width: 65%;
-    height: 625px;
+    height: 100%;
   }
 
   .col-dx{
@@ -282,11 +282,6 @@ body{
       width: 75px;
     }
 
-    .chat{
-      overflow-y: scroll;
-      min-width: 65px;
-      min-height: 89%;
-    }
 
     .searchbar{
       display: none;
