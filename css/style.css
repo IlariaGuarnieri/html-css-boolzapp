@@ -132,14 +132,14 @@ body{
 
   .chat{
     overflow-y: auto;
-    height: 51.8vh;
+    height: 92.15686274509804vh;
   }
 
   .utente{
     display: flex;
     align-items: center;
     width: 100%;
-    height: 68px;
+    height: 77px;
     background-color: #FFF;
     border-bottom: 0.01px solid #B1B1B1;
   }
@@ -159,6 +159,8 @@ body{
 
 /* CHAT grande  */
   .row-dx{
+    display: flex;
+    flex-direction: column;
     background-image: url(/img/mine.jpg);
     width: 65%;
     height: 625px;
@@ -174,7 +176,7 @@ body{
 
   .col-chat{
     overflow-y: auto;
-    
+
   }
 
   /* 
