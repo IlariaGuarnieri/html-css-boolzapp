@@ -19,20 +19,17 @@ body{
   border-left: 0.5px solid rgb(159, 158, 158);
 }
 
-
-
-/* dekstop */
-@media screen and (min-width:992px){
   main{
-    margin: 0 auto;
     display: flex;
-    height: 766px;
-    min-width: 992px;
+    height: 90%;
+    min-width: 80%;
     justify-content: center;
     align-items: center;
   }
   
   .container{
+    margin: 0 auto;
+    border-color: blue;
     display: flex;
     height: 96%;
     width: 80%;
@@ -48,7 +45,7 @@ body{
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 68px;
+    height: 10%;
     background-color: #EAEAEA;
   }
 
@@ -69,6 +66,7 @@ body{
   #elements{
     margin-right: 10px;
     color: #B1B1B1;
+    font-size: 1.2rem;
   }
 
   #elements .fa-solid{
@@ -106,10 +104,13 @@ body{
     justify-content: center;
     margin-left: 10px;
   }
+  .notification p{
+    font-size: 15px;
+  }
 
   .searchbar{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     width: 100%;
     height: 48px;
@@ -117,19 +118,42 @@ body{
     border-bottom: 0.01px solid #B1B1B1;
   }
 
+  .searchbar input{
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    width: 95%;
+    color: #ABABAB;
+    padding-left: 15px;
+    border-radius: 2px;
+    border: 0;
+    
+  }
+
   .chat{
-    overflow: auto;
-    height: 51.8vh ;
+    overflow-y: auto;
+    height: 51.8vh;
   }
 
   .utente{
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    width: 98%;
+    width: 100%;
     height: 68px;
-    background-color: #EAEAEA;
+    background-color: #FFF;
     border-bottom: 0.01px solid #B1B1B1;
+  }
+
+  .font-xs-time{
+    font-size: 12px;
+    color:#C0C3C5;
+  }
+
+  .name{
+    display: flex;
+    flex-direction: column;
+    line-height: 20px;
+    margin-left: 10px;
   }
 
 
@@ -137,15 +161,28 @@ body{
   .row-dx{
     background-image: url(/img/mine.jpg);
     width: 65%;
-    height: 100%;
+    height: 90%;
+  }
+
+  .sfondo-chat{
+    overflow-y: auto;
   }
 
   .col-dx{
     display: flex;
     align-items: center;
     width: 100%;
-    height: 68px;
+    height: 10%;
     background-color: #EAEAEA;
+  }
+
+  .elements-dx{
+    color: #AAAAAA;
+    margin-left: 170px;
+  }
+
+  .elements-dx i{
+    margin: 8px;
   }
 
   .col-dx p{
@@ -164,5 +201,117 @@ body{
     color:#646D71;
   }
 
+  .message-sent{
+    max-width: 55%;
+    height: 130px ;
+    background-color: #D5F9BA ;
+    border-radius: 15px;
+    margin-left: 220px;
+    margin-top: 48px ;
+  }
 
-}
+  .message-sent p{
+    font-size: 13px;
+    padding: 15px;
+    line-height: 17px;
+  }
+
+  .message-received{
+    max-width: 55%;
+    height: 130px ;
+    background-color: #fff ;
+    border-radius: 15px;
+    margin-left: 50px;
+    margin-top: 10px;
+  }
+
+  .message-received p{
+    font-size: 13px;
+    padding: 15px;
+    line-height: 17px;
+  }
+
+  .col-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 100px;
+    width: 100%;
+    height: 68px;
+    background-color: #F3EEEA;
+    
+  }
+
+  .col-bottom input{
+    height: 80%;
+    width: 80%;
+    color: #ABABAB;
+    padding-left: 15px;
+    border-radius: 2px;
+    border: 0;
+  }
+
+  .col-bottom i{
+    font-size: 25px;
+    color: #556166;
+  }
+
+  .fa-microphone{
+    margin-right: 10px;
+  }
+
+  .fa-face-smile{
+    margin-left: 10px;
+  }
+
+  /* /DEKSTOP */
+
+  /* tablet */
+
+  @media screen and (max-width: 991px){
+
+    .user-name, .name , .font-xs{
+      display: none;
+    }
+
+    .row-sx{
+      width: 8%;
+      height: 100%;
+    }
+
+    .row-dx{
+      width: 90%;
+      height:100% ;
+    }
+
+
+    .utente{
+      width: 75px;
+    }
+
+    .chat{
+      overflow-y: scroll;
+      min-width: 65px;
+      min-height: 89%;
+    }
+
+    .searchbar{
+      display: none;
+    }
+
+    .col-notifiche{
+      display: none;
+    }
+
+    .col{
+      width: 75px;
+    }
+
+    #elements{
+      display: none;
+    }
+  }
+  
+
+/* mobile */
+
