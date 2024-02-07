@@ -245,6 +245,39 @@ aside .users{
   margin-top: 10px;
 }
 
+.chevron{
+  position: relative;
+}
+
+.chevron:hover ~.tendina-chevron{
+  display: block;
+}
+
+
+.chevron .fa-chevron-down{
+  position: absolute;
+  bottom:80px;
+  left: 370px;
+  color:#AFB2B5 ;
+  cursor: pointer;
+}
+
+.tendina-chevron{
+  display: none;
+  position: relative;
+  width: 150px;
+  height: 60px;
+  background-color: #00B2B5;
+  margin-left: 240px;
+  margin-top: -80px;
+}
+
+.tendina-chevron p{
+  text-align: center;
+  font-size: 16px;
+  padding: 4px;
+}
+
 /* input scrivi un messaggio */
 
 .input-message{
