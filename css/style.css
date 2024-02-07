@@ -278,6 +278,18 @@ aside .users{
   padding: 4px;
 }
 
+.orario-messaggio{
+  position: relative;
+  bottom: 18px;
+  left: 395px;
+}
+
+.orario-messaggio p{
+  position: absolute;
+  font-size: 13px;
+  color: #BBBEC1;
+}
+
 /* input scrivi un messaggio */
 
 .input-message{
