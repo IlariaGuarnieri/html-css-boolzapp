@@ -167,6 +167,18 @@ aside .users{
   line-height: 23px;
 }
 
+.orario-chat{
+  position: relative;
+  bottom: 18px;
+  left: 70px;
+}
+
+.orario-chat p{
+  position: absolute;
+  font-size: 13px;
+  color: #BBBEC1;
+}
+
 /* sezione searchbar */
 
 .lents{
@@ -205,6 +217,13 @@ aside .users{
 }
 
 /* header destra */
+.contatto-m{
+  align-items: center;
+  height: 77px;
+  width: 100%;
+  border: 0.3px solid #D6D6D6;
+  background-color: #EAEAEA;
+}
 
 .photo-michele{
   width: 60px;
